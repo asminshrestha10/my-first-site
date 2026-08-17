@@ -1,35 +1,161 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>JuneTrail Demo</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JuneTrail — Engineering-grade 4x4 gear guides</title>
+<meta name="description" content="4x4 and overland gear guides written from an engineering perspective — bash plates, towbars, recovery gear, suspension, and bull bars.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Built for the track ahead</h1>
-    <p>Bash plates, towbars and recovery gear for Navara, Triton, Hilux and Ranger</p>
-    <button>Shop by vehicle</button>
-  </header>
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">JuneTrail <span class="mark">JT</span></a>
+    <nav class="nav">
+      <a href="index.html#bash-plates">Bash Plates</a>
+      <a href="index.html#towbars">Towbars</a>
+      <a href="index.html#recovery">Recovery</a>
+      <a href="index.html#suspension">Suspension</a>
+    </nav>
+  </div>
+</header>
+<div class="flag-strip"><span></span><span></span><span></span><span></span><span></span></div>
 
-  <section class="categories">
-    <h2>Shop by category</h2>
-   <div class="grid">
-  <a href="#" class="card">Bash Plates</a>
-  <a href="#" class="card">Towbars</a>
-  <a href="#" class="card">Recovery Gear</a>
-  <a href="#" class="card">Suspension</a>
-</div>
+<main class="wrap">
+
+  <section class="title-block">
+    <div class="title-block-inner">
+      <span class="eyebrow">Field notes from the design desk</span>
+      <h1 class="display">Gear guides written by someone who actually does the FEA.</h1>
+      <p class="dek">JuneTrail breaks down bash plates, towbars, recovery gear, suspension, and bull bars the way an engineer reads a drawing — load paths, materials, tolerances — not just a spec sheet copy-paste.</p>
+    </div>
+    <div class="title-block-foot">
+      <span><b>Sheet</b> JT-INDEX</span>
+      <span><b>Focus</b> AU 4x4 accessories</span>
+      <span><b>Platforms</b> Navara D27 · Triton MV · Hilux · Ranger · D-Max</span>
+    </div>
   </section>
 
-  <section class="articles">
-    <h2>Latest Articles</h2>
-    <ul>
-      <li>Bash plate material comparison: 3mm vs 4mm steel</li>
-      <li>Coupling height and AS 4177.1 compliance explained</li>
-    </ul>
+  <section id="bash-plates">
+    <div class="section-head">
+      <h2>Bash Plates</h2>
+      <span class="tag">Load paths &amp; material selection</span>
+    </div>
+    <div class="catalog">
+      <a class="card" href="articles/bash-plate-materials.html">
+        <span class="idx">JT-001</span>
+        <h3>Bash plate materials: 3mm alloy vs. 4mm steel, by the numbers</h3>
+        <p>Where the weight-vs-protection trade-off actually breaks even, with real deflection figures.</p>
+        <span class="status">Published</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-002</span>
+        <h3>Reading a bash plate mounting pattern before you buy</h3>
+        <p>Why bolt-pattern mismatches are the #1 return reason, and how to check yours in 2 minutes.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-003</span>
+        <h3>Underbody clearance: what changes when you fit a bash plate</h3>
+        <p>Approach and departure angle math, worked through for the D27 and MV platforms.</p>
+        <span class="status">Coming soon</span>
+      </a>
+    </div>
   </section>
+
+  <section id="towbars">
+    <div class="section-head">
+      <h2>Towbars</h2>
+      <span class="tag">ADR compliance &amp; coupling geometry</span>
+    </div>
+    <div class="catalog">
+      <a class="card" href="#">
+        <span class="idx">JT-004</span>
+        <h3>AS 4177.1 in plain English: what "compliant" actually means</h3>
+        <p>The coupling height band, and why so many aftermarket bars ship out of it.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-005</span>
+        <h3>Towbar tongue weight vs. hitch box strength</h3>
+        <p>Reading a manufacturer's rating claim like an engineer, not a marketing page.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-006</span>
+        <h3>D27 vs. MV: towbar fitment differences that catch people out</h3>
+        <p>Shared platform, different bumper geometry — what actually changes.</p>
+        <span class="status">Coming soon</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="recovery">
+    <div class="section-head">
+      <h2>Recovery Gear</h2>
+      <span class="tag">Rated capacity &amp; failure modes</span>
+    </div>
+    <div class="catalog">
+      <a class="card" href="#">
+        <span class="idx">JT-007</span>
+        <h3>Rated recovery points: what the number on the tag actually means</h3>
+        <p>Minimum breaking strength vs. working load, explained without the scare tactics.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-008</span>
+        <h3>Snatch strap stretch: the physics of why it works</h3>
+        <p>Energy storage and release, and why a straight-line pull matters more than horsepower.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-009</span>
+        <h3>Winch line: steel vs. synthetic, an engineer's take</h3>
+        <p>Weight, heat, and failure behaviour compared side by side.</p>
+        <span class="status">Coming soon</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="suspension">
+    <div class="section-head">
+      <h2>Suspension &amp; Bull Bars</h2>
+      <span class="tag">Geometry, GVM, and crash structure</span>
+    </div>
+    <div class="catalog">
+      <a class="card" href="#">
+        <span class="idx">JT-010</span>
+        <h3>Lift kits and your GVM: the math nobody shows you</h3>
+        <p>How ride height changes affect load rating, not just looks.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-011</span>
+        <h3>Bull bar crash structure: what changes behind the badge</h3>
+        <p>Airbag compliance and mounting points, compared across three popular designs.</p>
+        <span class="status">Coming soon</span>
+      </a>
+      <a class="card" href="#">
+        <span class="idx">JT-012</span>
+        <h3>Coil vs. leaf: choosing rear suspension for a loaded tray</h3>
+        <p>Spring rate trade-offs when you're carrying real weight, not showroom weight.</p>
+        <span class="status">Coming soon</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 JuneTrail — part of Junebymim</span>
+    <span>As an Amazon Associate, JuneTrail earns from qualifying purchases.</span>
+  </div>
+</footer>
 
 </body>
 </html>
